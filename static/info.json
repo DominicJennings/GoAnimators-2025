@@ -9,7 +9,7 @@
 		},
 		"/$": {
 			"headers": {
-				"Location": "/html/home.html"
+				"Location": "/html/list/movies.html"
 			},
 			"statusCode": 302,
 			"content": ""
@@ -35,19 +35,19 @@
 			},
 			"content": ""
 		},
+		"_PROPS/(.*)(jpg|JPG|jpeg|JPEG)$": {
+			"headers": {
+				"Content-Type": "image/jpg"
+			}
+		},
+		"_PROPS/(.*)": {
+			"headers": {
+				"Content-Type": "image/png"
+			}
+		},
 		"/html/([^?]+html).*": {
 			"contentReplace": true,
 			"regexLink": "/html/$1",
-			"headers": {
-				"Content-Type": "text/html; charset=UTF-8"
-			}
-		},
-		"movies(.*)": {
-			"headers": {
-				"Content-Type": "text/html; charset=UTF-8"
-			}
-		},
-		"create(.*)": {
 			"headers": {
 				"Content-Type": "text/html; charset=UTF-8"
 			}
