@@ -9,7 +9,7 @@
 		},
 		"/$": {
 			"headers": {
-				"Location": "/html/list/movies.html"
+				"Location": "/html/home.html"
 			},
 			"statusCode": 302,
 			"content": ""
