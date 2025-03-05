@@ -2,14 +2,14 @@
 	"GET": {
 		"/index.html": {
 			"headers": {
-				"Location": "/m/movies"
+				"Location": "/html/home.html"
 			},
 			"statusCode": 302,
 			"content": ""
 		},
 		"/$": {
 			"headers": {
-				"Location": "/m/movies"
+				"Location": "/html/home.html"
 			},
 			"statusCode": 302,
 			"content": ""
